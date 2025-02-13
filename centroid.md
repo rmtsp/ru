@@ -101,7 +101,7 @@ void dfs (int v, int p, int d, vector<int> &t) {
 void solve (int v) {
     /* <единственный зависящий от конкретной задачи код> */
     sizes(v);
-    vector<int> d(s[v], 0);
+    vector<int> d(s[v] + l + 5, 0);
     d[0] = 1;
     for (int u : g[v]) {
         if (!used[u]) {
